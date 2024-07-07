@@ -1,0 +1,32 @@
+ERROR - 2024-07-07 11:18:01 --> mysqli_sql_exception: Can't create table `ronass`.`komentar` (errno: 150 "Foreign key constraint is incorrectly formed") in C:\xampp\htdocs\Ronass\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Ronass\system\Database\MySQLi\Connection.php(312): mysqli->query('CREATE TABLE `k...', 0)
+#1 C:\xampp\htdocs\Ronass\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `k...')
+#2 C:\xampp\htdocs\Ronass\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `k...')
+#3 C:\xampp\htdocs\Ronass\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `k...')
+#4 C:\xampp\htdocs\Ronass\app\Database\Migrations\20240707181300_komentar.php(47): CodeIgniter\Database\Forge->createTable('komentar')
+#5 C:\xampp\htdocs\Ronass\system\Database\MigrationRunner.php(867): App\Database\Migrations\Komentar->up()
+#6 C:\xampp\htdocs\Ronass\system\Database\MigrationRunner.php(183): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\Ronass\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\Ronass\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\Ronass\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\Ronass\system\Boot.php(351): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\Ronass\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\Ronass\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2024-07-07 11:19:01 --> mysqli_sql_exception: Can't create table `ronass`.`komentar` (errno: 150 "Foreign key constraint is incorrectly formed") in C:\xampp\htdocs\Ronass\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Ronass\system\Database\MySQLi\Connection.php(312): mysqli->query('CREATE TABLE `k...', 0)
+#1 C:\xampp\htdocs\Ronass\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `k...')
+#2 C:\xampp\htdocs\Ronass\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `k...')
+#3 C:\xampp\htdocs\Ronass\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `k...')
+#4 C:\xampp\htdocs\Ronass\app\Database\Migrations\20240707181300_komentar.php(47): CodeIgniter\Database\Forge->createTable('komentar')
+#5 C:\xampp\htdocs\Ronass\system\Database\MigrationRunner.php(867): App\Database\Migrations\Komentar->up()
+#6 C:\xampp\htdocs\Ronass\system\Database\MigrationRunner.php(183): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\Ronass\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\Ronass\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\Ronass\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\Ronass\system\Boot.php(351): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\Ronass\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\Ronass\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
